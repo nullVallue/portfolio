@@ -4,9 +4,9 @@ import {useClickAway} from "react-use";
 import NavBarLink from "./NavBarLink";
 import NavSideBar from "./NavSideBar";
 import {Squeeze as MenuIcon } from "hamburger-react";
-import Palette from "../theme/Palette";
-import { Link } from "react-router-dom"
+import Palette from "../util/theme/Palette";
 import { AnimatePresence, motion } from "framer-motion";
+import { myname, myposition } from "../util/constants";
 
 export default function NavBar(props){
     const [isOpen, setOpen] = useState(false);
@@ -17,6 +17,8 @@ export default function NavBar(props){
     // nav bar class
     let navClassStyle =  `
         bg-navbg-color
+        fixed
+        w-screen
         py-3 
         px-5 
         flex
@@ -24,23 +26,11 @@ export default function NavBar(props){
         justify-between
     `;
 
-    // navbar links class
-    let textClassStyle = `
-        text-navtext-color
-        py-2 
-        px-7
-        transition-all 
-        ease-in-out 
-        hover:text-xl 
-        duration-300 
-        inline-block
-        align-baseline
-    `;
 
     let titleClassStyle = `
-        text-navtext-color
         text-start
         text-base
+        text-navtext-color
         py-2 
         px-7
         font-normal
@@ -50,6 +40,7 @@ export default function NavBar(props){
     `;
 
     let subtitleClassStyle = `
+        text-navtext-color
         text-sm
         font-extralight
     `;
@@ -57,39 +48,66 @@ export default function NavBar(props){
     let iconStyle = `
     `;
 
-    const sidebarVariants = {
-        opened: { x: 0 },
-        closed: { x: '100%'},
+    let blurDivVariants = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 0.2,
+            }
+        }
+    }
+
+    let titleVariants = {
+        hidden: {
+            opacity: 0,
+            x: '-100%'
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.5
+            }
+        }
     }
 
     return(
         <>
-        <div className={navClassStyle}>
-            <NavBarLink href='#' className={titleClassStyle}>
-                <Link to="/">
-                    Wei Jian
-                    <br />
-                    <span className={subtitleClassStyle}>
-                        Fullstack Developer
-                    </span>
-                </Link>
-            </NavBarLink>
+        <div className={`${navClassStyle}`}>
+            <AnimatePresence>
+                <motion.div
+                    variants={titleVariants}
+                    initial="hidden"
+                    animate="visible"
+                >
+                    <NavBarLink to="/" className ={titleClassStyle}>
+                        { myname }
+                        <br />
+                        <span className={subtitleClassStyle}>
+                            { myposition }
+                        </span>
+                    </NavBarLink>
+                </motion.div>
+            </AnimatePresence>
             <AnimatePresence>
             {
                 isOpen && (
                     <>
                         <motion.div 
-                        initial={{opacity: 0}}
-                        animate={{opacity: 1}}
-                        exit={{opacity: 0}}
-                        transition={{duration: 0.2}}
+                        variants={blurDivVariants}
+                        initial='hidden'
+                        animate='visible'
+                        exit='hidden'
                         className="fixed block left-0 top-0 w-screen h-screen bg-black/5 backdrop-blur-sm" onClick={()=>setOpen(false)}></motion.div>
-                            <NavSideBar />
+                            <NavSideBar onLinkClick={()=>setOpen(false)} />
                     </>
                 )
             }
             </AnimatePresence>
-            <MenuIcon toggled={isOpen} toggle={setOpen} className={iconStyle} color={Palette.monoBluePalette.white} size={18} duration={0.2}/>
+            <MenuIcon toggled={isOpen} toggle={setOpen} className={iconStyle} color={Palette.coffeePalette['dark-brown'][50]} size={18} duration={0.2}/>
         </div>
         </>
     );

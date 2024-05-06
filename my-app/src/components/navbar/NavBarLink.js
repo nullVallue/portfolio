@@ -1,9 +1,15 @@
+import { Link } from "react-router-dom"
+
 export default function NavBarLink(props){
-    let {children, href, className} = props;
+    let {children, to, className, onClick = (() => {}) } = props;
 
     return (
         <>
-        <a href={href} className={className}>{children}</a>
+        <button onClick={()=>onClick()}>
+        <Link to={to} className={className}>
+            {children}
+        </Link>
+        </button>
         </>
     );
 }
