@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-import Palette from './src/components/theme/Palette'
+import Palette from './src/components/util/theme/Palette'
 
 module.exports = {
   content: [
@@ -12,17 +12,23 @@ module.exports = {
     extend: {
       colors: {
         'bodybg-color' : {
-          DEFAULT: Palette.monoBluePalette['black'],
+          DEFAULT: Palette.coffeePalette['brown-yellow'][50],
         },
         'navbg-color' : {
-          DEFAULT: Palette.monoBluePalette['black'],
+          DEFAULT: Palette.coffeePalette['brown-yellow'][50],
+        },
+        'navmenubg-color' : {
+          DEFAULT: Palette.coffeePalette['brown-yellow'][50],
         },
         'navtext-color' : {
-          DEFAULT: Palette.monoBluePalette['white'],
+          DEFAULT: Palette.coffeePalette['dark-brown'],
         },
+        'navtext-hover-color' : {
+          DEFAULT: Palette.coffeePalette['brown'],
+        }
       },
       boxShadow: {
-        'nav-shadow' : '0 10px 20px 0 rgb(149 202 227 / 0.05)',
+        'nav-shadow' : '0 10px 20px 0 rgb(27 21 22 / 0.05)',
       },
       keyframes: {
         'nav-load' : {
