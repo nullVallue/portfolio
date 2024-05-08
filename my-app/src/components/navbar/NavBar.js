@@ -13,17 +13,19 @@ export default function NavBar(props){
     const ref = useRef(null);
     useClickAway(ref, () => setOpen(false));
 
+
     // follow tailwindcss
     // nav bar class
     let navClassStyle =  `
-        bg-navbg-color
+        bg-navbg-color/0
         fixed
         w-screen
         py-3 
         px-5 
         flex
         items-center
-        justify-between
+        justify-end
+        z-10
     `;
 
 
@@ -77,7 +79,7 @@ export default function NavBar(props){
     return(
         <>
         <div className={`${navClassStyle}`}>
-            <AnimatePresence>
+            {/* <AnimatePresence>
                 <motion.div
                     variants={titleVariants}
                     initial="hidden"
@@ -91,7 +93,7 @@ export default function NavBar(props){
                         </span>
                     </NavBarLink>
                 </motion.div>
-            </AnimatePresence>
+            </AnimatePresence> */}
             <AnimatePresence>
             {
                 isOpen && (
@@ -107,7 +109,7 @@ export default function NavBar(props){
                 )
             }
             </AnimatePresence>
-            <MenuIcon toggled={isOpen} toggle={setOpen} className={iconStyle} color={Palette.coffeePalette['dark-brown'][50]} size={18} duration={0.2}/>
+            <MenuIcon toggled={isOpen} toggle={setOpen} className={iconStyle} color={Palette.monoBluePalette['dark-blue'][500]} size={18} duration={0.2}/>
         </div>
         </>
     );

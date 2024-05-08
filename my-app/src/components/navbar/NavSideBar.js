@@ -18,7 +18,8 @@ export default function NavSideBar(props){
     let barContainerStyle = `
         fixed 
         block 
-        w-3/12 
+        lg:w-3/12 
+        w-screen
         h-screen 
         top-0 
         right-0 
@@ -159,14 +160,14 @@ export default function NavSideBar(props){
             // }}
             className={barContainerStyle}
         >
+            <div className="h-1">
+            </div>
             <motion.ul
                 variants={ulVariants}
                 initial='hidden'
                 animate='visible'
                 exit='hidden'
             >
-                <div className="h-20">
-                </div>
                 <motion.li variants={liVariants}>
                     <div className="flex justify-between">
                         <NavLink to="/" onClick={() => onLinkClick()} className={textClassStyle}>
@@ -211,22 +212,22 @@ export default function NavSideBar(props){
             exit="hidden"
             >
                 <motion.div variants={iconVariants} className="inline-block">
-                    <a href={githubLink} target="_blank" rel="noopener">
+                    <a href={githubLink} target="_blank" rel="noreferrer">
                         <Github className={iconStyle} /> 
                     </a>
                 </motion.div>
                 <motion.div variants={iconVariants} className="inline-block">
-                    <a href={instagramLink} target="_blank" rel="noopener">
+                    <a href={instagramLink} target="_blank" rel="noreferrer">
                         <Instagram className={iconStyle} /> 
                     </a>
                 </motion.div>
                 <motion.div variants={iconVariants} className="inline-block">
-                    <a href={linkedInLink} target="_blank" rel="noopener">
+                    <a href={linkedInLink} target="_blank" rel="noreferrer">
                         <Linkedin className={iconStyle} /> 
                     </a>
                 </motion.div>
                 <motion.div variants={iconVariants} className="inline-block">
-                    <a href={emailLink} target="_blank" rel="noopener">
+                    <a href={emailLink} target="_blank" rel="noreferrer">
                     {/* <Minutemailer className={iconStyle} />  */}
                         <Email className={iconStyle} /> 
                     </a>

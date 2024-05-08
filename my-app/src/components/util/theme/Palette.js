@@ -26,7 +26,17 @@ export default class Palette{
         'black' : '#040b0e',
         'primary-blue' : '#95cae3',
         'secondary-blue' : '#1e6485',
-        'accent-blue' : '#3ea7da',
+        // 'dark-blue' : '#2C4561',
+        'dark-blue' : {
+            300: '#38587C',
+            400: '#2E4865',
+            500: '#23374D'
+        },
+        'accent-blue' : {
+            300: '#00CDFF',
+            400: '#00a4e8',
+            500: '#3ea7da',
+        },
     }
 
     static coffeePalette= {

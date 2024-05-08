@@ -1,8 +1,12 @@
 
-// Personal Info
-export const myname = "Wei Jian";
-export const myfullname = "Wei Jian Tan";
-export const myposition = "Fullstack Developer";
+// // Personal Info
+// export const myname = "Wei Jian";
+// export const myfullname = "Wei Jian Tan";
+// export const myposition = "Fullstack Developer";
+
+export const myname = "Placeholder Name";
+export const myfullname = "Placeholder Fullname";
+export const myposition = "Placeholder Pos";
 
 // Links
 export const githubLink = "https://github.com/nullVallue";
