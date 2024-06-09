@@ -1,9 +1,10 @@
 import React from "react";
+import ContactMe from "../../pages/contactMe/ContactMe";
 
-const Home = React.lazy(() => import("../../pages/Home"));
-const AboutMe = React.lazy(() => import("../../pages/AboutMe"));
-const Projects = React.lazy(() => import("../../pages/Projects"));
-const Milestones = React.lazy(() => import("../../pages/Milestones"));
+const Home = React.lazy(() => import("../../pages/home/Home"));
+const AboutMe = React.lazy(() => import("../../pages/aboutMe/AboutMe"));
+const Projects = React.lazy(() => import("../../pages/projects/Projects"));
+const Milestones = React.lazy(() => import("../../pages/milestones/Milestones"));
 
 export const ROUTES = [
     {
@@ -21,6 +22,10 @@ export const ROUTES = [
     {
         path: "/Milestones",
         element: <Milestones />
+    },
+    {
+        path: "/ContactMe",
+        element: <ContactMe />
     },
 ];
 
