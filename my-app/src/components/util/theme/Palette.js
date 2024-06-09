@@ -23,6 +23,7 @@ export default class Palette{
 
     static monoBluePalette= {
         'white': '#dfedf4',
+        'pure-white': '#fff',
         'black' : '#040b0e',
         'primary-blue' : '#95cae3',
         'secondary-blue' : '#1e6485',
@@ -30,7 +31,10 @@ export default class Palette{
         'dark-blue' : {
             300: '#38587C',
             400: '#2E4865',
-            500: '#23374D'
+            500: '#23374D',
+            600: '#15212F',
+            700: '#111B26',
+            800: '#0E1620',
         },
         'accent-blue' : {
             300: '#00CDFF',
