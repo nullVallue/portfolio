@@ -7,15 +7,19 @@ import ParticleBg from "./particle_bg/ParticleBg";
 export default function Layout(){
     return(
         <>
-            <ParticleBg />
-            <div className="bg-gradient-to-b from-bodybg-color to-bodybg-gradientstop-color h-screen w-screen">
-                <NavBar />
+        <div className="no-scrollbar overflow-y-scroll scroll-smooth">
+            {/* <ParticleBg /> */}
+            <div className="h-screen w-screen">
+                {/* <NavBar /> */}
+                {/* <div className="fixed top-0 left-0 h-screen w-screen bg-black/90"></div> */}
                 <main>
                     <Suspense fallback={<Loader />}>
                         <Outlet />
                     </Suspense>
                 </main>
             </div>
+
+        </div>
         </>
     )
 }
