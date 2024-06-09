@@ -4,9 +4,6 @@ import Palette from '../util/theme/Palette'
 export const particleOptions = {
   autoplay: true,
   fpsLimit: 120,
-  fullscreen: {
-    enable: true,
-  },
   background:{
     'z-index': -10,
   },
