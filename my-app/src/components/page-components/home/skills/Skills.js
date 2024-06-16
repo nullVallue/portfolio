@@ -1,5 +1,5 @@
-import Card from "../../../card/Card";
-import { frontEndLogos } from "../../../util/constants";
+import { backEndLogos, frontEndLogos, othersLogos } from "../../../util/constants";
+import Card from "../../../card/OutlineCard";
 
 export default function Skills(props){
 
@@ -31,22 +31,54 @@ export default function Skills(props){
     `;
 
     let logo = `
-        object-contain
-        w-[30%]
+        object-scale-down
+        w-full
+        h-auto
+    `;
+
+    let logoDiv = `
+        w-[25%]
+    `;
+
+    let logoLabelDiv =`
+        w-full
+    `;
+
+    let logoLabel = `
+        mt-5
+        block
+        text-center
+        w-full
+        text-lg
+        font-semibold
+        tracking-wide
+        text-home-skills-label
     `;
 
     let logoContainer = `
         flex
         flex-wrap
         justify-evenly
-        gap-y-8
+        gap-y-9
+        gap-x-5
     `;
 
     function getLogos(arr){
         let elementArr = [];
 
         for(let i = 0; i < arr.length; i++){
-            elementArr.push(<img src={arr[i]} className={logo}/>);
+            elementArr.push(
+                <>
+                    <div className={logoDiv}>
+                        <img src={arr[i].logo} className={logo} alt={arr[i].name}/>
+                        <div className={logoLabelDiv}>
+                            <span className={logoLabel}>
+                                {arr[i].name}
+                            </span>
+                        </div>
+                    </div>
+                </>
+        );
         }
 
         return elementArr;
@@ -74,7 +106,11 @@ export default function Skills(props){
                         className={card}
                         titleFontSize="2xl"
                     >
-                        hi
+                        <div className={logoContainer}>
+                            {
+                                getLogos(backEndLogos)
+                            }
+                        </div>
                     </Card>
 
                     <Card 
@@ -82,7 +118,11 @@ export default function Skills(props){
                         className={card}
                         titleFontSize="2xl"
                     >
-                        hi
+                        <div className={logoContainer}>
+                            {
+                                getLogos(othersLogos)
+                            }
+                        </div>
                     </Card>
 
 
