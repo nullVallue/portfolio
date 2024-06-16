@@ -136,16 +136,36 @@ module.exports = {
          *========================================================================**/
           
           /**------------------------------------------------------------------------
-           *                           card
+           *                           outline card
            *------------------------------------------------------------------------**/
           'card-border' : {
             DEFAULT: Palette.monoBluePalette['black'],
           },
-          'card-bg' : {
+          'outlineCard-bg' : {
             // DEFAULT: Palette.monoBluePalette['dark-blue'][800],
-            // DEFAULT: Palette.monoBluePalette['white'],
+            DEFAULT: Palette.monoBluePalette['pure-white'],
           },
+
+
+          /**------------------------------------------------------------------------
+           *                           img card
+           *------------------------------------------------------------------------**/
         
+          'imgcard-bg' : {
+            // DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+            DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
+          'imgcard-overlay-bg' : {
+            DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+            // DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
+          'link-text' : {
+            DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
+
 
       },
       boxShadow: {
