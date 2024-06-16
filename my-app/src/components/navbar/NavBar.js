@@ -26,12 +26,6 @@ export default function NavBar(props){
 
     `;
 
-        // transition
-        // duration-400
-        // ease-out
-        // -translate-y-12
-        // hover:-translate-y-0
-
     let navLinkContainer = `
         flex
         items-center
@@ -52,8 +46,6 @@ export default function NavBar(props){
         ease-in-out
         duration-200
 
-
-
         font-sans
         font-black 
         text-navtext-color
@@ -70,17 +62,11 @@ export default function NavBar(props){
 
         md:text-8xl
         sm:text-7xl
-        text-6xl
+        text-4xl
 
         text-nowrap
         w-min
     `;
-
-        // border
-        // border-solid
-        // border-2
-        // border-navtext-color
-        // rounded-lg
 
     let logoLinkClass = `
         font-mono
@@ -146,12 +132,6 @@ export default function NavBar(props){
 
                 <div className={navLinkContainer}>
 
-                    {/* <a href="#top" className={navLinkClass}>
-                        Home
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </a> */}
-
                     <a href="#aboutMeSection" className={navLinkClass}>
                         About Me
                         <span className={spanUnderlineClass}>
@@ -179,74 +159,6 @@ export default function NavBar(props){
                     <MenuIcon toggled={isOpen} toggle={setOpen} className={iconStyle} color={Palette.monoBluePalette['dark-blue'][500]} size={30} duration={0.2}/>
                 </div>
 
-
-
-
-                {/* {
-                    isHome?(
-                    <a href="#top" className={navLinkClass}>
-                        Home
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </a>):
-                    (<NavLink to="/" className={navLinkClass}>
-                        Home
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </NavLink>)
-                }
-                {
-                    isAboutMe?
-                    (<a href="#top" className={navLinkClass}>
-                        About Me
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </a>):
-                    (<NavLink to="/AboutMe" className={navLinkClass}>
-                        About Me
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </NavLink>)
-                }
-                {
-                    isProjects?
-                    (<a href="#top" className={navLinkClass}>
-                        Projects
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </a>):
-                    (<NavLink to="/Projects" className={navLinkClass}>
-                        Projects
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </NavLink>)
-                }
-                {
-                    isMilestones?
-                    (<a href="#top" className={navLinkClass}>
-                        Milestones
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </a>):
-                    (<NavLink to="/Milestones" className={navLinkClass}>
-                        Milestones
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </NavLink>)
-                }
-                {
-                    isContactMe?
-                    (<a href="#top" className={navLinkClass}>
-                        Contact Me
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </a>):
-                    (<NavLink to="/ContactMe" className={navLinkClass}>
-                        Contact Me
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </NavLink>)
-                } */}
                 
             </motion.div>
 

@@ -11,7 +11,8 @@ export default function LeftSection(props){
 
 
     let titleDiv=`
-        p-16
+        sm:p-16
+        p-5
     `;
 
     let nameClassStyle=`
@@ -19,7 +20,8 @@ export default function LeftSection(props){
         font-sans
         xl:text-8xl
         lg:text-7xl
-        text-8xl
+        md:text-8xl
+        text-5xl
         tracking-wider
         font-black
 

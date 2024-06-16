@@ -15,19 +15,22 @@ export default function AboutMe(props){
 
     let titleClass = `
         text-home-aboutme-title
-        text-6xl
+        sm:text-6xl
+        text-5xl
         font-black
     `;
 
     let paragraphClass = `
         text-home-aboutme-p
-        text-3xl
+        sm:text-3xl
+        text-xl
         font-semibold
         mt-10
     `;
 
     let leftContainer = `
-        px-16
+        sm:px-16
+        px-5
         lg:w-1/2
         w-full
         h-min
@@ -38,7 +41,8 @@ export default function AboutMe(props){
     `;
 
     let rightContainer = `
-        px-16
+        sm:px-16
+        px-5
         lg:w-1/2
         lg:mt-0
         mt-10

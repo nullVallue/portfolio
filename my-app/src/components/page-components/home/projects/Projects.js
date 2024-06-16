@@ -32,8 +32,8 @@ export default function Projects(props){
     let card=`
         xl:w-3/12
         md:w-5/12
-        sm:w-9/12
-        w-10/12
+        sm:w-10/12
+        w-11/12
 
         transition-all
         duration-200
@@ -72,7 +72,7 @@ export default function Projects(props){
                     src={p.cardThumbnail}
                     pointer={true}
                     href={p.projectLink}
-                    linkText="Checkout The Project"
+                    linkText={`Check out ${p.title}`}
                 >
                     {
                         p.description
