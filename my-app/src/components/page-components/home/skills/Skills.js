@@ -1,5 +1,5 @@
 import { backEndLogos, frontEndLogos, othersLogos } from "../../../util/constants";
-import Card from "../../../card/OutlineCard";
+import OutlineCard from "../../../card/OutlineCard";
 
 export default function Skills(props){
 
@@ -89,7 +89,7 @@ export default function Skills(props){
             <div className={containerClass}>
                 <h2 className={title}>Skills</h2>
                 <div className={mainRow}>
-                    <Card 
+                    <OutlineCard 
                         title="Font End" 
                         className={card}
                         titleFontSize="2xl"
@@ -99,9 +99,9 @@ export default function Skills(props){
                                 getLogos(frontEndLogos)
                             }
                         </div>
-                    </Card>
+                    </OutlineCard>
 
-                    <Card 
+                    <OutlineCard 
                         title="Back End" 
                         className={card}
                         titleFontSize="2xl"
@@ -111,9 +111,9 @@ export default function Skills(props){
                                 getLogos(backEndLogos)
                             }
                         </div>
-                    </Card>
+                    </OutlineCard>
 
-                    <Card 
+                    <OutlineCard 
                         title="Others" 
                         className={card}
                         titleFontSize="2xl"
@@ -123,7 +123,7 @@ export default function Skills(props){
                                 getLogos(othersLogos)
                             }
                         </div>
-                    </Card>
+                    </OutlineCard>
 
 
                 </div>
