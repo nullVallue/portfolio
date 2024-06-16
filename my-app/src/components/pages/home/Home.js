@@ -6,40 +6,17 @@ import { useState } from "react";
  *                           Page Components
  *------------------------------------------------------------------------**/
 import NavBar from "../../navbar/NavBar";
-import LeftSection from "../../page-components/home/hero/leftSection/LeftSection";
-import RightSection from "../../page-components/home/hero/rightSection/RightSection";
 import FeaturedProjects from "../../page-components/home/featuredProjects/FeaturedProjects";
 import AboutMe from "../../page-components/home/aboutMe/AboutMe";
 import Skills from "../../page-components/home/skills/Skills";
 import Projects from "../../page-components/home/projects/Projects";
+import Hero from "../../page-components/home/hero/Hero";
 
 export default function Home(props){
 
 
     const[showNavBar, setShowNavBar] = useState(false);
 
-    let heroSectionClass=`
-        flex
-    `;
-
-    let leftSectionClass=`
-        w-1/2
-        h-screen 
-        bg-home-namebg-color
-        flex-col
-        justify-center 
-        content-center
-    `;
-
-
-    let rightSectionClass=`
-        w-1/2
-        h-screen 
-        bg-home-hero-right-color
-        flex-col
-        justify-center
-        content-center
-    `;
 
 
 
@@ -58,20 +35,12 @@ export default function Home(props){
 
             <motion.div 
                 id="top"
-                className={heroSectionClass}
                 onViewportLeave={()=>{ setShowNavBar(true); }}
                 onViewportEnter={()=>{ setShowNavBar(false); }}
             >
 
 
-                <div className={leftSectionClass}>
-                    <LeftSection/>
-                </div>
-
-                <div className={rightSectionClass}>
-                    <RightSection />
-                </div>
-
+                <Hero />
 
             </motion.div>
 

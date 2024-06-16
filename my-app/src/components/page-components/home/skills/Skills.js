@@ -22,12 +22,21 @@ export default function Skills(props){
     let mainRow = `
         w-screen
         flex
+        flex-wrap
+        gap-1
+        gap-y-10
         justify-evenly
         mt-10
     `;
     
     let card = `
-        w-3/12
+        xl:w-3/12
+        md:w-5/12
+        sm:w-9/12
+        w-10/12
+
+        transition-all
+        duration-200
     `;
 
     let logo = `

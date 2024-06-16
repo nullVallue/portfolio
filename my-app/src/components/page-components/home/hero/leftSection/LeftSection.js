@@ -17,9 +17,14 @@ export default function LeftSection(props){
     let nameClassStyle=`
         text-home-name-color
         font-sans
+        xl:text-8xl
+        lg:text-7xl
         text-8xl
         tracking-wider
         font-black
+
+        transition-all
+        duration-200
     `;
 
     let greetingClass=`

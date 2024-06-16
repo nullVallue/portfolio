@@ -7,6 +7,7 @@ export default function AboutMe(props){
         w-screen
         bg-home-aboutme-bgcolor 
         flex
+        flex-wrap
         h-min
         min-h-screen
     `;
@@ -27,16 +28,27 @@ export default function AboutMe(props){
 
     let leftContainer = `
         px-16
-        w-1/2
+        lg:w-1/2
+        w-full
         h-min
+
+
+        transition-all
+        duration-200
     `;
 
     let rightContainer = `
-        w-1/2
         px-16
+        lg:w-1/2
+        lg:mt-0
+        mt-10
+        w-full
         h-min
         max-h-screen
         my-auto
+
+        transition-all
+        duration-200
     `;
 
     let imgFrame = `

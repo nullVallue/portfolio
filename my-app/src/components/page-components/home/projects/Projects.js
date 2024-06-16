@@ -23,15 +23,20 @@ export default function Projects(props){
     let cardContainer = `
         w-screen
         flex
+        flex-wrap
+        gap-x-3
         justify-evenly
         mt-10
     `;
 
     let card=`
         xl:w-3/12
-        md:w-1/2
+        md:w-5/12
         sm:w-9/12
         w-10/12
+
+        transition-all
+        duration-200
     `;
 
     let pillContainer = `
