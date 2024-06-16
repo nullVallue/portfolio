@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
+import { logoText } from "../util/constants";
 
 export default function NavBar(props){
     const { isHome, isAboutMe, isProjects, isMilestones, isContactMe } = props;
@@ -14,7 +15,7 @@ export default function NavBar(props){
         px-5 
         flex
         items-center
-        justify-end
+        justify-between
         z-50
 
     `;
@@ -24,6 +25,12 @@ export default function NavBar(props){
         // ease-out
         // -translate-y-12
         // hover:-translate-y-0
+
+    let navLinkContainer = `
+        flex
+        items-center
+        justify-end
+    `;
 
 
     let navLinkClass = `
@@ -41,6 +48,17 @@ export default function NavBar(props){
         mx-3
         px-2
         group
+    `;
+
+        // border
+        // border-solid
+        // border-2
+        // border-navtext-color
+        // rounded-lg
+
+    let logoLinkClass = `
+        font-mono
+        text-lg
     `;
 
     let spanUnderlineClass = `
@@ -79,33 +97,41 @@ export default function NavBar(props){
                 }} 
             >
 
-
-                <a href="#top" className={navLinkClass}>
-                    Home
-                    <span className={spanUnderlineClass}>
-                    </span>
+                <a href="#top" className={navLinkClass + logoLinkClass}>
+                    {logoText}
                 </a>
 
-                <a href="#aboutMeSection" className={navLinkClass}>
-                    About Me
-                    <span className={spanUnderlineClass}>
-                    </span>
-                </a>
-                <a href="#projectsSection" className={navLinkClass}>
-                    Projects
-                    <span className={spanUnderlineClass}>
-                    </span>
-                </a>
-                <a href="#milestonesSection" className={navLinkClass}>
-                    Milestones
-                    <span className={spanUnderlineClass}>
-                    </span>
-                </a>
-                <a href="#contactMeSection" className={navLinkClass}>
-                    Contact Me
-                    <span className={spanUnderlineClass}>
-                    </span>
-                </a>
+
+                <div className={navLinkContainer}>
+
+                    {/* <a href="#top" className={navLinkClass}>
+                        Home
+                        <span className={spanUnderlineClass}>
+                        </span>
+                    </a> */}
+
+                    <a href="#aboutMeSection" className={navLinkClass}>
+                        About Me
+                        <span className={spanUnderlineClass}>
+                        </span>
+                    </a>
+                    <a href="#projectsSection" className={navLinkClass}>
+                        Projects
+                        <span className={spanUnderlineClass}>
+                        </span>
+                    </a>
+                    <a href="#milestonesSection" className={navLinkClass}>
+                        Milestones
+                        <span className={spanUnderlineClass}>
+                        </span>
+                    </a>
+                    <a href="#contactMeSection" className={navLinkClass}>
+                        Contact Me
+                        <span className={spanUnderlineClass}>
+                        </span>
+                    </a>
+
+                </div>
 
 
 
