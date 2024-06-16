@@ -1,4 +1,4 @@
-export default function Card(props){
+export default function OutlineCard(props){
     const {
         titleFontWeight = "bold", 
         titleFontSize = "lg", 
@@ -14,7 +14,7 @@ export default function Card(props){
         border-4
         border-solid
         border-card-border
-        bg-card-bg
+        bg-outlineCard-bg
         py-5
         px-4
     `;
