@@ -109,6 +109,22 @@ module.exports = {
             // DEFAULT: Palette.monoBluePalette['pure-white'],
             DEFAULT: Palette.monoBluePalette['black'],
           },
+          'home-skills-label' : {
+            DEFAULT: Palette.monoBluePalette['black'],
+            // DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
+          /**------------------------------------------------------------------------
+           *                           Projects
+           *------------------------------------------------------------------------**/
+
+          'home-projects-bgcolor' : {
+            DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+          },
+          'home-projects-title' : {
+            DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
         
         /*============================ END OF HOME ============================*/
 
@@ -124,6 +140,10 @@ module.exports = {
            *------------------------------------------------------------------------**/
           'card-border' : {
             DEFAULT: Palette.monoBluePalette['black'],
+          },
+          'card-bg' : {
+            // DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+            // DEFAULT: Palette.monoBluePalette['white'],
           },
         
 
