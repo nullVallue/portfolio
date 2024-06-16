@@ -57,73 +57,151 @@ const figmaLogo = require("../../assets/skillLogos/figmaLogo.png");
 const gitLogo= require("../../assets/skillLogos/gitLogo.png");
 const premiereLogo = require("../../assets/skillLogos/premiereLogo.png");
 
+const flutter = {
+    logo: flutterLogo,
+    name: "Flutter", 
+    mainColor: "#18BDFD",
+    textColor: "#FFF"
+};
 
+const react = {
+    logo: reactLogo,
+    name: "React",
+    mainColor: "#61DAFB",
+    textColor: "#FFF"
+};
+
+const tailwind = {
+    logo: tailwindLogo,
+    name: "Tailwind", 
+    mainColor: "#38BDF9",
+    textColor: "#FFF"
+};
+
+const bootstrap = {
+    logo: bootstrapLogo,
+    name: "Bootstrap",
+    mainColor: "#8711FC",
+    textColor: "#FFF"
+};
+
+const html = {
+    logo: htmlLogo,
+    name: "HTML",
+    mainColor: "#E35026",
+    textColor: "#FFF"
+};
+
+const css = {
+    logo: cssLogo,
+    name: "CSS",
+    mainColor: "#214CE5",
+    textColor: "#FFF"
+};
+
+const javascript = {
+    logo: javascriptLogo,
+    name: "Javscript",
+    mainColor: "#E9CA33",
+    textColor: "#FFF"
+};
+
+const dart = {
+    logo: dartLogo,
+    name: "Dart",
+    mainColor: "#235997",
+    textColor: "#FFF"
+};
+
+const python = {
+    logo: pythonLogo,
+    name: "Python",
+    mainColor: "#3670A0",
+    textColor: "#FFF"
+};
+
+const nextjs = {
+    logo: nextjsLogo,
+    name: "NextJS",
+    mainColor: "#000000",
+    textColor: "#FFF"
+};
+
+const mongodb = {
+    logo: mongoLogo,
+    name: "MongoDB",
+    mainColor: "#6DAC48",
+    textColor: "#FFF"
+};
+
+const firebase = {
+    logo: firebaseLogo,
+    name: "Firebase",
+    mainColor: "#F57F16",
+    textColor: "#FFF"
+};
+
+const figma = {
+    logo: figmaLogo,
+    name: "Figma",
+    mainColor: "#30323A",
+    textColor: "#FFF"
+};
+
+const git = {
+    logo: gitLogo,
+    name: "Git",
+    mainColor: "#F05033",
+    textColor: "#FFF"
+};
+
+const premiere = {
+    logo: premiereLogo,
+    name: "Premiere",
+    mainColor: "#2C073D",
+    textColor: "#FFF"
+};
 
 export const frontEndLogos = [
-    {
-        logo: flutterLogo,
-        name: "Flutter"
-    },
-    {
-        logo: reactLogo,
-        name: "React"
-    },
-    {
-        logo: tailwindLogo,
-        name: "Tailwind"
-    },
-    {
-        logo: bootstrapLogo,
-        name: "Bootstrap"
-    },
-    {
-        logo: htmlLogo,
-        name: "HTML"
-    },
-    {
-        logo: cssLogo,
-        name: "CSS"
-    },
+    flutter,
+    react,
+    tailwind,
+    bootstrap,
+    html,
+    css,
 ];
 
 export const backEndLogos = [
-    {
-        logo: javascriptLogo,
-        name: "Javscript"
-    },
-    {
-        logo: dartLogo,
-        name: "Dart"
-    },
-    {
-        logo: pythonLogo,
-        name: "Python"
-    },
-    {
-        logo: nextjsLogo,
-        name: "NextJS"
-    },
-    {
-        logo: mongoLogo,
-        name: "MongoDB"
-    },
-    {
-        logo: firebaseLogo,
-        name: "Firebase"
-    },
+    javascript,
+    dart,
+    python,
+    nextjs,
+    mongodb,
+    firebase,
 ];
 
 export const othersLogos = [
+    figma,
+    git,
+    premiere
+];
+
+/**------------------------------------------------------------------------
+ *                           Projects
+ *------------------------------------------------------------------------**/
+
+
+export const projectsArr = [
     {
-        logo: figmaLogo,
-        name: "Figma"
-    },
-    {
-        logo: gitLogo,
-        name: "Git"
-    },
-    {
-        logo: premiereLogo,
-        name: "Premiere"
-    },
+        title: "Goods",
+        description: "A modern inventory management system that utilises state of the art object recoginition technology",
+        cardThumbnail: require("../../assets/projects/goods/goodsThumbnail.png"),
+        projectLink: "https://github.com/nullVallue/GoodsInventoryManagement",
+        skills: [
+            flutter,
+            python,
+            firebase,
+            figma
+        ],
+    }
 ];
