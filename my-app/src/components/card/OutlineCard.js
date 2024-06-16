@@ -1,20 +1,20 @@
-
 export default function Card(props){
     const {
         titleFontWeight = "bold", 
         titleFontSize = "lg", 
         titleAlign = "center",
-        borderColorTw = "card-border",
-        borderRadiusTw = "md",
-        borderColor,
+        // borderColorTw = "card-border",
+        // borderRadiusTw = "md",
+        // bgColor = "",
+        // borderColor,
     } = props;
-
 
     let card = `
         rounded-xl
         border-4
         border-solid
-        border-${borderColor?"[" + borderColor + "]":borderColorTw}
+        border-card-border
+        bg-card-bg
         py-5
         px-4
     `;
@@ -29,11 +29,17 @@ export default function Card(props){
         font-${titleFontWeight}
         text-${titleFontSize}
         text-${titleAlign}
+        text-home-skills-title
     `;
+
+
 
     return(
         <>
-            <div className={card + props.className}>
+            <div className={
+                card +
+                props.className
+                }>
                 {
                     props.title?
                     <div className={titleDiv}>
