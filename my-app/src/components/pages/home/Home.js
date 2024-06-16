@@ -11,6 +11,7 @@ import RightSection from "../../page-components/home/hero/rightSection/RightSect
 import FeaturedProjects from "../../page-components/home/featuredProjects/FeaturedProjects";
 import AboutMe from "../../page-components/home/aboutMe/AboutMe";
 import Skills from "../../page-components/home/skills/Skills";
+import Projects from "../../page-components/home/projects/Projects";
 
 export default function Home(props){
 
@@ -82,6 +83,9 @@ export default function Home(props){
                 <Skills/>
             </div>
 
+            <div>
+                <Projects />
+            </div>
 
             <div className="w-screen h-screen bg-white">
             </div>
