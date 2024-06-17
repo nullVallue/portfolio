@@ -203,5 +203,14 @@ export const projectsArr = [
             firebase,
             figma
         ],
-    }
+    },
+    {
+        title: "Python TicTacToe",
+        description: "A simple TicTacToe CLI app I created to learn Python, Object Oriented Programming and Data Structures",
+        cardThumbnail: require("../../assets/projects/pythonTicTacToe/pythonTicTacToe.png"),
+        projectLink: "https://github.com/nullVallue/ticTacToe",
+        skills: [
+            python
+        ],
+    },
 ];
