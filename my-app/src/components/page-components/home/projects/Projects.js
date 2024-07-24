@@ -1,5 +1,8 @@
 import ImgCard from "../../../card/ImgCard";
+import ImgCardSharp from "../../../card/ImgCardSharp";
 import Pill from "../../../small-components/pill/base/Pill";
+import PillSharp from "../../../small-components/pill/sharp/PillSharp";
+import PillSharpOutline from "../../../small-components/pill/sharpOutline/PillSharpOutline";
 import { projectsArr } from "../../../util/constants";
 
 export default function Projects(props){
@@ -24,7 +27,7 @@ export default function Projects(props){
         w-screen
         flex
         flex-wrap
-        gap-x-3
+        gap-10
         justify-evenly
         mt-10
     `;
@@ -53,20 +56,22 @@ export default function Projects(props){
 
             p.skills.forEach(e => {
                 pillElements.push(
-                    <Pill
+                    <PillSharp
                         bgColor={e.mainColor}
                         textColor={e.textColor}
+                        // textColor={e.mainColor}
+                        // borderColor={e.mainColor}
                     >
                         {
                             "#" + e.name
                         }
-                    </Pill>
+                    </PillSharp>
                 );
             });
 
 
             elementArr.push(
-                <ImgCard
+                <ImgCardSharp
                     className={card}
                     title={p.title}
                     src={p.cardThumbnail}
@@ -82,7 +87,7 @@ export default function Projects(props){
                             pillElements
                         }
                     </div>
-                </ImgCard>
+                </ImgCardSharp>
             );
         });
 
