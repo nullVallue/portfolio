@@ -1,5 +1,6 @@
 import { backEndLogos, frontEndLogos, othersLogos } from "../../../util/constants";
-import OutlineCard from "../../../card/OutlineCard";
+import Card from "../../../card/Card";
+import ShadowCard from "../../../card/ShadowCard";
 
 export default function Skills(props){
 
@@ -24,10 +25,11 @@ export default function Skills(props){
         flex
         flex-wrap
         gap-1
-        gap-y-10
+        gap-y-16
         justify-evenly
         mt-10
     `;
+
     
     let card = `
         xl:w-3/12
@@ -95,10 +97,10 @@ export default function Skills(props){
 
     return(
         <>
-            <div className={containerClass}>
-                <h2 className={title}>Skills</h2>
+            <div id="skillsSection" className={containerClass}>
+                <h2 className={title}>What I Do Best</h2>
                 <div className={mainRow}>
-                    <OutlineCard 
+                    <ShadowCard
                         title="Font End" 
                         className={card}
                         titleFontSize="2xl"
@@ -108,9 +110,9 @@ export default function Skills(props){
                                 getLogos(frontEndLogos)
                             }
                         </div>
-                    </OutlineCard>
+                    </ShadowCard>
 
-                    <OutlineCard 
+                    <ShadowCard
                         title="Back End" 
                         className={card}
                         titleFontSize="2xl"
@@ -120,9 +122,10 @@ export default function Skills(props){
                                 getLogos(backEndLogos)
                             }
                         </div>
-                    </OutlineCard>
+                    </ShadowCard>
 
-                    <OutlineCard 
+
+                    <ShadowCard
                         title="Others" 
                         className={card}
                         titleFontSize="2xl"
@@ -132,8 +135,7 @@ export default function Skills(props){
                                 getLogos(othersLogos)
                             }
                         </div>
-                    </OutlineCard>
-
+                    </ShadowCard>
 
                 </div>
             </div>
