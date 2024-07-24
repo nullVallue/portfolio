@@ -71,7 +71,7 @@ export default function AboutMe(props){
 
     return(
         <>
-            <div className={containerClass}>
+            <div id="aboutMeSection" className={containerClass}>
 
                 <div className={leftContainer}>
                     <h1 className={titleClass}>About Me</h1>
