@@ -1,0 +1,55 @@
+export default function Card(props){
+    const {
+        titleFontWeight = "bold", 
+        titleFontSize = "lg", 
+        titleAlign = "center",
+        // borderColorTw = "card-border",
+        // borderRadiusTw = "md",
+        // bgColor = "",
+        // borderColor,
+    } = props;
+
+    let card = `
+        rounded-xl
+        bg-card-bg
+        py-5
+        px-4
+        drop-shadow-md
+    `;
+
+    let titleDiv = `
+        mb-7
+    `;
+
+    let title = `
+        block
+        w-full
+        font-${titleFontWeight}
+        text-${titleFontSize}
+        text-${titleAlign}
+        text-home-skills-categoryTitle
+    `;
+
+
+
+    return(
+        <>
+            <div className={
+                card +
+                props.className
+                }>
+                {
+                    props.title?
+                    <div className={titleDiv}>
+                        <span className={title}>{props.title}</span>
+                    </div>:
+                    <></>
+                }
+                {
+                    props.children
+                }
+            </div>
+        </>
+    );
+
+}
