@@ -1,9 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 import { logoText } from "../util/constants";
 import {Squeeze as MenuIcon } from "hamburger-react";
 import Palette from "../util/theme/Palette";
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 export default function NavBar(props){
     // const { isHome, isAboutMe, isProjects, isMilestones, isContactMe } = props;
@@ -143,18 +142,13 @@ export default function NavBar(props){
                         <span className={spanUnderlineClass}>
                         </span>
                     </a>
-                    {/* <a href="#skillsSection" className={navLinkClass + navLinkNotTitle}>
+                    <a href="#skillsSection" className={navLinkClass + navLinkNotTitle}>
                         Skills
                         <span className={spanUnderlineClass}>
                         </span>
-                    </a> */}
+                    </a>
                     <a href="#projectsSection" className={navLinkClass + navLinkNotTitle}>
                         Projects
-                        <span className={spanUnderlineClass}>
-                        </span>
-                    </a>
-                    <a href="#milestonesSection" className={navLinkClass + navLinkNotTitle}>
-                        My Journey
                         <span className={spanUnderlineClass}>
                         </span>
                     </a>

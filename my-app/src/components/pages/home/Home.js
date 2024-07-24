@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useScroll } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 
@@ -6,12 +6,10 @@ import { useState } from "react";
  *                           Page Components
  *------------------------------------------------------------------------**/
 import NavBar from "../../navbar/NavBar";
-import FeaturedProjects from "../../page-components/home/featuredProjects/FeaturedProjects";
 import AboutMe from "../../page-components/home/aboutMe/AboutMe";
 import Skills from "../../page-components/home/skills/Skills";
 import Projects from "../../page-components/home/projects/Projects";
 import Hero from "../../page-components/home/hero/Hero";
-import Milestones from "../../page-components/home/milestones/Milestones";
 
 export default function Home(props){
 

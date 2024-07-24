@@ -1,6 +1,3 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
 export default function RightSection(props){
 
 
@@ -8,13 +5,6 @@ export default function RightSection(props){
         p-16
         flex
         flex-col
-    `;
-
-    let linksText2=`
-        text-5xl
-        font-black
-        tracking-wider
-
     `;
 
     let linksText=`
@@ -93,14 +83,13 @@ export default function RightSection(props){
             <button className={linkBtnGroup}>
                 <span className={linkBoxShadow}></span>
                 <span className={linkBoxBg}></span>
-                {/* <NavLink className={linksText} to="/AboutMe">Projects</NavLink> */}
-                <a href='#projectsSection'className={linksText} >Projects</a>
+                <a href='#skillsSection'className={linksText} >Skills</a>
             </button>
             <button className={linkBtnGroup}>
                 <span className={linkBoxShadow}></span>
                 <span className={linkBoxBg}></span>
-                {/* <NavLink className={linksText} to="/AboutMe">Milestones</NavLink> */}
-                <a href='#milestonesSection'className={linksText} >Milestones</a>
+                {/* <NavLink className={linksText} to="/AboutMe">Projects</NavLink> */}
+                <a href='#projectsSection'className={linksText} >Projects</a>
             </button>
             <button className={linkBtnGroup}>
                 <span className={linkBoxShadow}></span>
