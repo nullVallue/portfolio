@@ -6,7 +6,7 @@ import Palette from "../util/theme/Palette";
 import { useEffect, useState } from "react"
 
 export default function NavBar(props){
-    const { isHome, isAboutMe, isProjects, isMilestones, isContactMe } = props;
+    // const { isHome, isAboutMe, isProjects, isMilestones, isContactMe } = props;
     const [isOpen, setOpen] = useState(false);
 
     // follow tailwindcss
@@ -47,15 +47,17 @@ export default function NavBar(props){
         duration-200
 
         font-sans
-        font-black 
         text-navtext-color
-        text-2xl
+        text-xl
         tracking-wider
         mx-3
         px-2
         group
 
+    `;
 
+    let navLinkNotTitle=`
+        font-extrabold
     `;
 
     let navLinkNoTitleClass=`
@@ -64,17 +66,19 @@ export default function NavBar(props){
         sm:text-7xl
         text-4xl
 
+        font-black
+
         text-nowrap
         w-min
     `;
 
     let logoLinkClass = `
         font-mono
+        font-black
         text-lg
     `;
 
     let spanUnderlineClass = `
-
 
         block 
         max-w-0 
@@ -85,6 +89,8 @@ export default function NavBar(props){
         bg-navtextbg-hover-color
 
         max-lg:h-5
+        max-md:h-3
+        max-sm:h-2
     `;
 
     let sidebarDiv = `
@@ -125,29 +131,34 @@ export default function NavBar(props){
                 }} 
             >
 
-                <a href="#top" className={navLinkClass + logoLinkClass} onClick={()=>{setOpen(false)}}>
+                <a href="#top" className={logoLinkClass + navLinkClass } onClick={()=>{setOpen(false)}}>
                     {logoText}
                 </a>
 
 
                 <div className={navLinkContainer}>
 
-                    <a href="#aboutMeSection" className={navLinkClass}>
+                    <a href="#aboutMeSection" className={navLinkClass + navLinkNotTitle}>
                         About Me
                         <span className={spanUnderlineClass}>
                         </span>
                     </a>
-                    <a href="#projectsSection" className={navLinkClass}>
+                    {/* <a href="#skillsSection" className={navLinkClass + navLinkNotTitle}>
+                        Skills
+                        <span className={spanUnderlineClass}>
+                        </span>
+                    </a> */}
+                    <a href="#projectsSection" className={navLinkClass + navLinkNotTitle}>
                         Projects
                         <span className={spanUnderlineClass}>
                         </span>
                     </a>
-                    <a href="#milestonesSection" className={navLinkClass}>
-                        Milestones
+                    <a href="#milestonesSection" className={navLinkClass + navLinkNotTitle}>
+                        My Journey
                         <span className={spanUnderlineClass}>
                         </span>
                     </a>
-                    <a href="#contactMeSection" className={navLinkClass}>
+                    <a href="#contactMeSection" className={navLinkClass + navLinkNotTitle}>
                         Contact Me
                         <span className={spanUnderlineClass}>
                         </span>
