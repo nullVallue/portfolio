@@ -11,6 +11,7 @@ import AboutMe from "../../page-components/home/aboutMe/AboutMe";
 import Skills from "../../page-components/home/skills/Skills";
 import Projects from "../../page-components/home/projects/Projects";
 import Hero from "../../page-components/home/hero/Hero";
+import Milestones from "../../page-components/home/milestones/Milestones";
 
 export default function Home(props){
 
@@ -44,7 +45,10 @@ export default function Home(props){
 
             </motion.div>
 
-            <div id="aboutMeSection">
+            {/* spacer to show navbar when in about me section */}
+            <div className="bg-home-aboutme-bgcolor h-1" />
+
+            <div>
                 <AboutMe/>
             </div>
 
@@ -55,6 +59,10 @@ export default function Home(props){
             <div>
                 <Projects />
             </div>
+
+            {/* <div>
+                <Milestones />
+            </div> */}
 
             <div className="w-screen h-screen bg-white">
             </div>
