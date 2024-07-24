@@ -113,6 +113,10 @@ module.exports = {
             DEFAULT: Palette.monoBluePalette['black'],
             // DEFAULT: Palette.monoBluePalette['pure-white'],
           },
+          'home-skills-categoryTitle' : {
+            DEFAULT: Palette.monoBluePalette['black'],
+            // DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
 
           /**------------------------------------------------------------------------
            *                           Projects
@@ -123,6 +127,16 @@ module.exports = {
           },
           'home-projects-title' : {
             DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
+          /**------------------------------------------------------------------------
+           *                           Milestones
+           *------------------------------------------------------------------------**/
+          'home-milestones-bgcolor' : {
+            DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+          'home-milestones-title' : {
+            DEFAULT: Palette.monoBluePalette['dark-blue'][800],
           },
 
         
@@ -164,6 +178,43 @@ module.exports = {
           'link-text' : {
             DEFAULT: Palette.monoBluePalette['pure-white'],
           },
+
+          /**------------------------------------------------------------------------
+           *                           Timeline card
+           *------------------------------------------------------------------------**/
+          'timelineCard-bg' : {
+            // DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+            DEFAULT: Palette.monoBluePalette['white'],
+          },
+
+          'timelineCard-border' : {
+            // DEFAULT: Palette.monoBluePalette['dark-blue'][200],
+            DEFAULT: Palette.monoBluePalette['black'],
+          },
+
+          /**------------------------------------------------------------------------
+           *                           Card
+           *------------------------------------------------------------------------**/
+          'card-bg' : {
+            DEFAULT: Palette.monoBluePalette['blue-off-white'][600],
+            // DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+          },
+
+          /**------------------------------------------------------------------------
+           *                           Shadow card
+           *------------------------------------------------------------------------**/
+          'shadow-card-shadow-color' : {
+            DEFAULT: Palette.monoBluePalette['black'],
+          },
+
+          'shadow-card-bg' : {
+            DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
+          'shadow-card-border' : {
+            DEFAULT: Palette.monoBluePalette['black'],
+          },
+
 
 
 
