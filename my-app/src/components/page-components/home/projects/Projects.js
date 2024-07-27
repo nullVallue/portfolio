@@ -1,8 +1,5 @@
-import ImgCard from "../../../card/ImgCard";
 import ImgCardSharp from "../../../card/ImgCardSharp";
-import Pill from "../../../small-components/pill/base/Pill";
 import PillSharp from "../../../small-components/pill/sharp/PillSharp";
-import PillSharpOutline from "../../../small-components/pill/sharpOutline/PillSharpOutline";
 import { projectsArr } from "../../../util/constants";
 
 export default function Projects(props){

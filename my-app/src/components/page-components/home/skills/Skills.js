@@ -1,5 +1,4 @@
 import { backEndLogos, frontEndLogos, othersLogos } from "../../../util/constants";
-import Card from "../../../card/Card";
 import ShadowCard from "../../../card/ShadowCard";
 
 export default function Skills(props){

@@ -7,7 +7,6 @@ export default function LeftSection(props){
 
     // checks whether page is being loaded for the first time
     const [firstLoad, setFirstLoad] = useState(true);
-    const [mainNameVisible, setMainNameVisible] = useState(true);
 
 
     let titleDiv=`
@@ -44,31 +43,6 @@ export default function LeftSection(props){
         font-bold
         mr-5
     `;
-
-
-    let nameDiv = `
-        w-screen
-        h-screen 
-        flex-col
-        content-center
-    `;
-
-
-    let servicesDiv=`
-        flex
-        justify-center
-        my-5
-    `;
-
-
-    let servicesClass=`
-        text-navtext-color
-        drop-shadow-lg
-        text-lg
-        font-light
-        tracking-widest
-    `;
-
 
 
     return(
