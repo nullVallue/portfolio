@@ -5,6 +5,7 @@
 export const myname = "Wei Jian";
 export const myfullname = "Wei Jian Tan";
 export const myposition = "Fullstack Developer";
+export const myemail = "weijiant02@gmail.com";
 
 // export const myname = "Placeholder Name";
 // export const myfullname = "Placeholder Fullname";
