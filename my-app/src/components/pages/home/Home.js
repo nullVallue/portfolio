@@ -1,11 +1,12 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 /**------------------------------------------------------------------------
  *                           Page Components
  *------------------------------------------------------------------------**/
 import NavBar from "../../navbar/NavBar";
+import Footer from "../../footer/Footer"; 
 import AboutMe from "../../page-components/home/aboutMe/AboutMe";
 import Skills from "../../page-components/home/skills/Skills";
 import Projects from "../../page-components/home/projects/Projects";
@@ -13,19 +14,35 @@ import Hero from "../../page-components/home/hero/Hero";
 
 export default function Home(props){
 
+    const breakpoint = 1024;
 
     const[showNavBar, setShowNavBar] = useState(false);
+    const[alwaysShowNavBar, setAlwaysShowNavBar] = useState(false);
+    const[windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+    const onWindowWidthChange = () => {
+        setWindowWidth(window.innerWidth);
 
+        if(window.innerWidth < breakpoint){
+            setAlwaysShowNavBar(true);
+        }
+        else{
+            setAlwaysShowNavBar(false);
+        }
 
+    }
 
-
+    useEffect(()=>{
+        if(window.innerWidth < breakpoint) setAlwaysShowNavBar(true);
+        window.addEventListener("resize", onWindowWidthChange);
+        return () => window.removeEventListener("resize", onWindowWidthChange);
+    }, []);
 
     return (
         <>
             <AnimatePresence>
                 {
-                    showNavBar && (
+                    (showNavBar || alwaysShowNavBar) && (
                             <NavBar isHome={true} />
                     )
                 }
@@ -35,7 +52,7 @@ export default function Home(props){
             <motion.div 
                 id="top"
                 onViewportLeave={()=>{ setShowNavBar(true); }}
-                onViewportEnter={()=>{ setShowNavBar(false); }}
+                onViewportEnter={()=>{ if(!alwaysShowNavBar) setShowNavBar(false); }}
             >
 
 
@@ -62,9 +79,10 @@ export default function Home(props){
                 <Milestones />
             </div> */}
 
-            <div className="w-screen h-screen bg-white">
-            </div>
+            {/* <div className="w-screen h-screen bg-white">
+            </div> */}
 
+            <Footer />
 
 
             {/* <div className={nameDiv}>
