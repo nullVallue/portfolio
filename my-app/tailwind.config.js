@@ -155,7 +155,8 @@ module.exports = {
            *                           footer
            *------------------------------------------------------------------------**/
           'footerbg-color' : {
-            DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+            // DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+            DEFAULT: Palette.monoBluePalette['black'],
           },
 
           'footertext-color' : {
