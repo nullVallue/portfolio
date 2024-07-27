@@ -7,6 +7,7 @@ export default function Skills(props){
     let containerClass = `
         py-28
         w-screen
+        xl:h-screen
         h-min
         bg-home-skills-bgcolor 
     `;
@@ -18,6 +19,7 @@ export default function Skills(props){
         text-5xl
         font-black
         w-screen
+        mb-24
     `;
 
     let mainRow = `
@@ -27,7 +29,6 @@ export default function Skills(props){
         gap-1
         gap-y-16
         justify-evenly
-        mt-10
     `;
 
     

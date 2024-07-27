@@ -21,6 +21,7 @@ export default function Projects(props){
         text-5xl
         font-black
         w-screen
+        mb-24
     `;
 
     let cardContainer = `
@@ -28,6 +29,7 @@ export default function Projects(props){
         flex
         flex-wrap
         gap-10
+        gap-y-20
         justify-evenly
         mt-10
     `;
