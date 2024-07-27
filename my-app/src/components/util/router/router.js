@@ -9,5 +9,6 @@ export const router = createBrowserRouter([
         element: <Layout />,
         children: ROUTES
     }
-]
+], {basename: "/portfolio"}
+
 );
