@@ -74,6 +74,7 @@ export default function Footer(props){
         <>
 
             <div
+                id="contactMeSection"
                 className={
                     containerTw
                 }
