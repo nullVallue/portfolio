@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.dbe0fd5d.css",
+    "main.js": "/portfolio/static/js/main.10c095be.js",
+    "static/js/199.375b0f57.chunk.js": "/portfolio/static/js/199.375b0f57.chunk.js",
+    "static/js/813.82503e05.chunk.js": "/portfolio/static/js/813.82503e05.chunk.js",
+    "static/js/275.2aa7674a.chunk.js": "/portfolio/static/js/275.2aa7674a.chunk.js",
+    "static/js/161.6f06d4e7.chunk.js": "/portfolio/static/js/161.6f06d4e7.chunk.js",
+    "static/js/475.bfc6662a.chunk.js": "/portfolio/static/js/475.bfc6662a.chunk.js",
+    "static/media/goodsThumbnail.png": "/portfolio/static/media/goodsThumbnail.bed3cc868c7eb2a5ef83.png",
+    "static/media/aboutMe1.JPG": "/portfolio/static/media/aboutMe1.caadab7d2ea264f195e6.JPG",
+    "static/media/figmaLogo.png": "/portfolio/static/media/figmaLogo.e3eda632293ac2143a26.png",
+    "static/media/firebaseLogo.png": "/portfolio/static/media/firebaseLogo.5aa7cf22cd45ec6bbec2.png",
+    "static/media/pythonLogo.png": "/portfolio/static/media/pythonLogo.d8b377f05522bf35de36.png",
+    "static/media/reactLogo.png": "/portfolio/static/media/reactLogo.c747b4db46ee2d1d5f6a.png",
+    "static/media/premiereLogo.png": "/portfolio/static/media/premiereLogo.436ec25fe5cce91afe76.png",
+    "static/media/javascriptLogo.png": "/portfolio/static/media/javascriptLogo.d9c4e5faa80d93d953d2.png",
+    "static/media/dartLogo.png": "/portfolio/static/media/dartLogo.b5a6cb2de70ad75092e0.png",
+    "static/media/pythonTicTacToe.png": "/portfolio/static/media/pythonTicTacToe.6c6fdbbca720770f0fc9.png",
+    "static/media/tailwindLogo.png": "/portfolio/static/media/tailwindLogo.243bad7df81cb9796f12.png",
+    "static/media/mongoLogo.png": "/portfolio/static/media/mongoLogo.e07dbe30930201e1d167.png",
+    "static/media/flutterLogo.png": "/portfolio/static/media/flutterLogo.6545ef6861076883703c.png",
+    "static/media/htmlLogo.png": "/portfolio/static/media/htmlLogo.323dab0ccafeb98fae45.png",
+    "static/media/cssLogo.png": "/portfolio/static/media/cssLogo.e3eaca70a5df942f9b5b.png",
+    "static/media/bootstrapLogo.png": "/portfolio/static/media/bootstrapLogo.28578390e287a979f75f.png",
+    "static/media/nextjsLogo.png": "/portfolio/static/media/nextjsLogo.70a93475e8c739b65181.png",
+    "index.html": "/portfolio/index.html",
+    "main.dbe0fd5d.css.map": "/portfolio/static/css/main.dbe0fd5d.css.map",
+    "main.10c095be.js.map": "/portfolio/static/js/main.10c095be.js.map",
+    "199.375b0f57.chunk.js.map": "/portfolio/static/js/199.375b0f57.chunk.js.map",
+    "813.82503e05.chunk.js.map": "/portfolio/static/js/813.82503e05.chunk.js.map",
+    "275.2aa7674a.chunk.js.map": "/portfolio/static/js/275.2aa7674a.chunk.js.map",
+    "161.6f06d4e7.chunk.js.map": "/portfolio/static/js/161.6f06d4e7.chunk.js.map",
+    "475.bfc6662a.chunk.js.map": "/portfolio/static/js/475.bfc6662a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbe0fd5d.css",
+    "static/js/main.10c095be.js"
+  ]
+}
