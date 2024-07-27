@@ -15,34 +15,6 @@ module.exports = {
          *                           home page
          *========================================================================**/
 
-          /**------------------------------------------------------------------------
-           *                           body
-           *------------------------------------------------------------------------**/
-          'bodybg-color' : {
-            DEFAULT: Palette.monoBluePalette['white'],
-          },
-          'bodybg-gradientstop-color' : {
-            DEFAULT: Palette.monoBluePalette['white'],
-          },
-
-          /**------------------------------------------------------------------------
-           *                           nav
-           *------------------------------------------------------------------------**/
-          'navbg-color' : {
-            DEFAULT: Palette.monoBluePalette['pure-white'],
-          },
-          'navmenubg-color' : {
-            DEFAULT: Palette.monoBluePalette['white'],
-          },
-          'navtext-color' : {
-            DEFAULT: Palette.monoBluePalette['black'],
-          },
-          'navtext-hover-color' : {
-            DEFAULT: Palette.monoBluePalette['white'],
-          },
-          'navtextbg-hover-color' : {
-            DEFAULT: Palette.monoBluePalette['accent-blue'][300],
-          },
 
           /**------------------------------------------------------------------------
            *                           hero
@@ -148,6 +120,53 @@ module.exports = {
         /**========================================================================
          *                           components
          *========================================================================**/
+
+          /**------------------------------------------------------------------------
+           *                           body
+           *------------------------------------------------------------------------**/
+          'bodybg-color' : {
+            DEFAULT: Palette.monoBluePalette['white'],
+          },
+          'bodybg-gradientstop-color' : {
+            DEFAULT: Palette.monoBluePalette['white'],
+          },
+
+          /**------------------------------------------------------------------------
+           *                           nav
+           *------------------------------------------------------------------------**/
+          'navbg-color' : {
+            DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+          'navmenubg-color' : {
+            DEFAULT: Palette.monoBluePalette['white'],
+          },
+          'navtext-color' : {
+            DEFAULT: Palette.monoBluePalette['black'],
+          },
+          'navtext-hover-color' : {
+            DEFAULT: Palette.monoBluePalette['white'],
+          },
+          'navtextbg-hover-color' : {
+            DEFAULT: Palette.monoBluePalette['accent-blue'][300],
+          },
+
+
+          /**------------------------------------------------------------------------
+           *                           footer
+           *------------------------------------------------------------------------**/
+          'footerbg-color' : {
+            DEFAULT: Palette.monoBluePalette['dark-blue'][800],
+          },
+
+          'footertext-color' : {
+            DEFAULT: Palette.monoBluePalette['pure-white'],
+          },
+
+          'footertext-hover-color' : {
+            DEFAULT: Palette.monoBluePalette['accent-blue'][300],
+          },
+
+
           
           /**------------------------------------------------------------------------
            *                           outline card
