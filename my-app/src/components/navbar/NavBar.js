@@ -195,13 +195,13 @@ export default function NavBar(props){
                                 <span className={spanUnderlineClass}>
                                 </span>
                             </a>
-                            <a href="#projectsSection" className={navLinkClass + navLinkNoTitleClass} onClick={()=>{setOpen(false)}}>
-                                Projects
+                            <a href="#skillsSection" className={navLinkClass + navLinkNoTitleClass} onClick={()=>{setOpen(false)}}>
+                                Skills 
                                 <span className={spanUnderlineClass}>
                                 </span>
                             </a>
-                            <a href="#milestonesSection" className={navLinkClass + navLinkNoTitleClass} onClick={()=>{setOpen(false)}}>
-                                Milestones
+                            <a href="#projectsSection" className={navLinkClass + navLinkNoTitleClass} onClick={()=>{setOpen(false)}}>
+                                Projects
                                 <span className={spanUnderlineClass}>
                                 </span>
                             </a>
