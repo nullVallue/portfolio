@@ -28,7 +28,7 @@ export const instagramLink = "https://www.instagram.com/wei_jiantan";
  *                          About Me 
  *------------------------------------------------------------------------**/
 export const aboutMeP =  `
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent cursus quam urna. Nulla eu mattis magna, a scelerisque purus. Nulla in leo fringilla, tempus metus tempus, commodo nibh. Curabitur at tortor eget metus feugiat dignissim. Sed vel nisl augue. Curabitur lacinia sed quam a suscipit. Aenean posuere nulla ac efficitur bibendum. In mattis non est vitae lobortis. In vehicula sed sapien non lacinia. 
+    I'm an independent software developer with extensive experience. I love crafting visually stunning websites that wow the users. I have a passion for technology and love challenging myself. I express my creativity through my works and express my artistic vision through my code. 
 `;
 
 export const aboutMePic = require("../../assets/aboutMe/aboutMe1.JPG");
