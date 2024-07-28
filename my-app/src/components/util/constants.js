@@ -214,4 +214,15 @@ export const projectsArr = [
             python
         ],
     },
+    {
+        title: "Simple Mock Travel Website",
+        description: "A quick and simple mock travel website built using purely HTML, CSS and Javascript, to test how fast I can build a website",
+        cardThumbnail: require("../../assets/projects/mockTravelSite/mockTravelSiteThumbnail.png"),
+        projectLink: "https://nullvallue.github.io/htmlCSSTravelWebsite/",
+        skills: [
+            html,
+            css,
+            javascript
+        ],
+    },
 ];
