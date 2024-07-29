@@ -89,6 +89,7 @@ export default function ImgCard(props){
         drop-shadow-md
         font-bold
         text-xl
+        text-center
 
         transition-all
         ease-in-out
