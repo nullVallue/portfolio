@@ -22,6 +22,8 @@ export default function NavBar(props){
         justify-between
         z-50
 
+        max-sm:py-3
+        max-sm:px-3
 
     `;
 
