@@ -16,7 +16,7 @@ export default function AboutMe(props){
     let titleClass = `
         text-home-aboutme-title
         sm:text-6xl
-        text-5xl
+        text-4xl
         font-black
     `;
 

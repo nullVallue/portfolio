@@ -15,10 +15,12 @@ export default function Skills(props){
         block
         text-center
         text-home-skills-title
-        text-5xl
+        sm:text-5xl
+        text-4xl
         font-black
         w-screen
-        mb-24
+        sm:mb-24
+        mb-16
     `;
 
     let mainRow = `
@@ -95,6 +97,7 @@ export default function Skills(props){
         return elementArr;
     }
 
+
     return(
         <>
             <div id="skillsSection" className={containerClass}>
@@ -104,6 +107,7 @@ export default function Skills(props){
                         title="Font End" 
                         className={card}
                         titleFontSize="2xl"
+                        offset={1.2}
                     >
                         <div className={logoContainer}>
                             {
@@ -116,6 +120,7 @@ export default function Skills(props){
                         title="Back End" 
                         className={card}
                         titleFontSize="2xl"
+                        offset={1.2}
                     >
                         <div className={logoContainer}>
                             {
@@ -129,6 +134,7 @@ export default function Skills(props){
                         title="Others" 
                         className={card}
                         titleFontSize="2xl"
+                        offset={1.2}
                     >
                         <div className={logoContainer}>
                             {

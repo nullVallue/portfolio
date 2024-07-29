@@ -15,10 +15,13 @@ export default function Projects(props){
         block
         text-center
         text-home-projects-title
-        text-5xl
+        sm:text-5xl
+        text-4xl
         font-black
         w-screen
-        mb-24
+        sm:mb-24
+        mb-16
+
     `;
 
     let cardContainer = `
