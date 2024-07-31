@@ -20,7 +20,7 @@ export default function NavBar(props){
         flex-wrap
         items-center
         justify-between
-        z-50
+        z-40
 
         max-sm:py-3
         max-sm:px-3
@@ -98,7 +98,7 @@ export default function NavBar(props){
         w-screen
         h-screen
         fixed
-        z-40
+        z-30
         pt-28
         p-8
         bg-navbg-color
